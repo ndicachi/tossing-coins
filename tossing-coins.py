@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 import random
 import numpy as np
 import matplotlib.pyplot as plt
@@ -23,11 +23,12 @@ for experiment in range (100000):
        if VA == 0:
            p = p - 1
             
-   print p
+   print(p)
    X = np.hstack((X,p))
    p = 0
 
-print X #X variable contains all the results from the n experiments
+#X variable contains all the results from the n experiments
+print(X)
 
 fig, HistogramaX =  plt.subplots()
 HistogramaX.hist(X, 100)
